@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>رسالة مع أغنية</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: 'Cairo', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+    }
+    .message-box {
+      background-color: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      width: 90%;
+      max-width: 600px;
+      text-align: right; /* لجعل النص في الجانب الأيمن */
+    }
+    h1 {
+      color: #333;
+    }
+    p {
+      color: #555;
+      line-height: 1.5;
+      margin: 10px 0;
+    }
+    audio {
+      display: none; /* إخفاء شريط التحكم في الصوت */
+    }
+  </style>
+</head>
+<body>
+  <div class="message-box">
+    <h1>عزيزتي نانسي</h1>
+    <p>لم أستطع تخيّل أن يأتي يوم أشارك فيه هذا القدر من حياتي مع أحد. وكما أخبرتني أمس، كل هذه الذكريات والمواقف تجعلني أريد أن أصبح إنسانًا أفضل من أجلك ومن أجل نفسي. فليس في قصتي نجاح من غيرك، وليس هناك حب بدونك.</p>
+    <p>أعلم أن الحياة ليست عادلة، وأنها ليست كما تريدين. لكن صدقيني، تولد السعادة من رحم المشاكل والأزمات. لا تيأسي، ولا تدعي الحزن يغلق عينيك عن جمال الحياة ولطف الخير الذي يرسله الله لك. تذكري، أنتِ لست وحدك، أنا هنا من أجلك. وأعلم جيدًا أنك قوية وذكية. تذكري كم مررتِ بصعوبات ونجوتِ منها وتعلمتِ دروسها، وما زلتِ قوية وطيبة وحنونة. والأهم، لم تستسلمي. الضعف ليس من صفاتك، فأنتِ جميلة دائمًا.</p>
+    <p>مع حبي دائمًا،</p>
+    <p>حبيبك.</p>
+  </div>
+
+  <audio id="myAudio" autoplay>
+    <source src="https://drive.google.com/uc?export=download&id=13s5_I3FkJYQ1vNwkOLrJgYyf6YVc9UtP" type="audio/mpeg">
+    متصفحك لا يدعم تشغيل الصوت.
+  </audio>
+
+  <script>
+    const audio = document.getElementById("myAudio");
+    audio.currentTime = 72; // تحديد وقت البدء عند الدقيقة 1:12
+    audio.play();
+  </script>
+</body>
+</html>
